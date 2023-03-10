@@ -15,6 +15,7 @@
 	<a href="#how-to-use">How to use</a> •
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
+	<a href="#disclaimer">Disclaimer</a> •
 	<a href="#testers">Testers</a> •
 	<a href="#license">License</a>
 </p>
@@ -63,6 +64,19 @@ gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `
 * ``get_next_line_bonus.c``		Contains functions specifically developed for this project
 * ``get_next_line_utils_bonus.c``	Contains functions from libft with a few changes to fit in the project
 * ``get_next_line_bonus.h``		Contains the headers of all .c files
+
+## DISCLAIMER
+At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
+
+```bash
+- No for, do while, switch, case or goto are allowed
+- No more than 25 lines per function and 5 functions per file
+- No assigns and declarations in the same line (unless static)
+- No more than 5 variables in 1 function
+- ...
+```
+
+<a href="https://github.com/jotavare/jotavare/blob/main/42/pdf/en_norm.pdf">Click here</a> for more information on 42 norms.
 
 ## TESTERS
 * [Francinette](https://github.com/xicodomingues/francinette)
