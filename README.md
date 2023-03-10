@@ -13,6 +13,8 @@
 <p align="center">
 	<a href="#about">About</a> •
 	<a href="#how-to-use">How to use</a> •
+	<a href="#mandatory">Mandatory</a> •
+	<a href="#bonus">Bonus</a> •
 	<a href="#testers">Testers</a> •
 	<a href="#license">License</a>
 </p>
