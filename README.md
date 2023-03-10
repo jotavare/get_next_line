@@ -70,5 +70,5 @@ gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `
 
 ## LICENSE
 <p>
-This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>.
+This work is published under the terms of <a href="https://github.com/jotavare/jotavare/blob/main/LICENSE">42 Unlicense</a>.
 </p>
