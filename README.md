@@ -66,6 +66,7 @@ gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `
 
 ## TESTERS
 * [Francinette](https://github.com/xicodomingues/francinette)
+* [gnlTester](https://github.com/Tripouille/gnlTester)
 
 ## LICENSE
 <p>
