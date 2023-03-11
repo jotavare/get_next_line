@@ -23,7 +23,7 @@
 ## ABOUT
 The "get_next_line" project in school 42 teaches us how to read from a file descriptor and use static variables. This function retrieves a single line from a specified file descriptor. When called in a loop, "get_next_line" returns all the contents of the file, one line at a time until the end of the file is reached. Additionally, this function can be compiled with any buffer size specified.
 
-Click here for the subject of this project.
+<a href="https://github.com/jotavare/get_next_line/blob/master/subject/en_subject_get_next_line.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
 #### COMPILE
@@ -56,14 +56,14 @@ gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `
 ```
 
 ## MANDATORY
-* ``get_next_line.c``		Contains functions specifically developed for this project
-* ``get_next_line_utils.c``	Contains functions from libft with a few changes to fit in the project
-* ``get_next_line.h``		Contains the headers of all .c files
+* Contains functions specifically developed for this project - ``get_next_line.c``
+* Contains functions from libft with a few changes to fit in the project - ``get_next_line_utils.c``
+* Contains the headers of all .c files - ``get_next_line.h``
 
 ## BONUS
-* ``get_next_line_bonus.c``		Contains functions specifically developed for this project
-* ``get_next_line_utils_bonus.c``	Contains functions from libft with a few changes to fit in the project
-* ``get_next_line_bonus.h``		Contains the headers of all .c files
+* Contains functions specifically developed for this project - ``get_next_line_bonus.c``		
+* Contains functions from libft with a few changes to fit in the project - ``get_next_line_utils_bonus.c``	
+* Contains the headers of all .c files - ``get_next_line_bonus.h``		
 
 ## DISCLAIMER
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
