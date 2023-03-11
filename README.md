@@ -56,14 +56,14 @@ gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `
 ```
 
 ## MANDATORY
-* Contains functions specifically developed for this project - ``get_next_line.c``
-* Contains functions from libft with a few changes to fit in the project - ``get_next_line_utils.c``
-* Contains the headers of all .c files - ``get_next_line.h``
+* Contains functions specifically developed for this project. ``get_next_line.c``
+* Contains functions from libft with a few changes to fit in the project. ``get_next_line_utils.c``
+* Contains the headers of all .c files. ``get_next_line.h``
 
 ## BONUS
-* Contains functions specifically developed for this project - ``get_next_line_bonus.c``		
-* Contains functions from libft with a few changes to fit in the project - ``get_next_line_utils_bonus.c``	
-* Contains the headers of all .c files - ``get_next_line_bonus.h``		
+* Contains functions specifically developed for this project. ``get_next_line_bonus.c``		
+* Contains functions from libft with a few changes to fit in the project. ``get_next_line_utils_bonus.c``	
+* Contains the headers of all .c files. ``get_next_line_bonus.h``		
 
 ## DISCLAIMER
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
