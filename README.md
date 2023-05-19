@@ -42,14 +42,14 @@ cd get_next_line\get_next_line
 
 #### 3º - Compile the mandatory or bonus files
 ```bash
-gcc main.c get_next_line.c get_next_line_utils.c `Mandatory`
-gcc main.c get_next_line_bonus.c get_next_line_utils_bonus.c `Bonus`
+(Mandatory) gcc main.c get_next_line.c get_next_line_utils.c
+(Bonus) gcc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
 ```bash
-gcc -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c `Mandatory`
-gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c `Bonus`
+(Mandatory) gcc -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c
+(Bonus) gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 5º - Execution
