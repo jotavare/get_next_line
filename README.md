@@ -30,17 +30,17 @@ The "get_next_line" project in school 42 teaches us how to read from a file desc
 #### COMPILATION AND EXECUTION
 
 #### 1º - Clone the repository
-```
+```git
 git clone git@github.com:jotavare/get_next_line.git
 ```
 
 #### 2º - Enter the project folder
-```
+```bash
 cd get_next_line/get_next_line
 ```
 
 #### 3º - Compile the mandatory or bonus files
-```
+```bash
 [Flags] -Wall -Wextra -Werror
 [Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
 [Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
@@ -48,14 +48,14 @@ cd get_next_line/get_next_line
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
 > get_next_line should be able to compile with and without the -D BUFFER_SIZE=[SIZE] flag.
-```
+```bash
 [Flags] -Wall -Wextra -Werror -D BUFFER_SIZE=[SIZE] 
 [Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
 [Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 5º - Execution with one or multiple file descriptors/standard input
-```
+```bash
 ./a.out [text.txt]
 ./a.out [text1.txt] [text2.txt]
 ```
@@ -77,7 +77,7 @@ cd get_next_line/get_next_line
 ## NORMINETTE
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
-```
+```c
 - No for, do...while, switch, case, goto, ternary operators and variable lenght arrays are allowed
 - Each function must be maximum 25 lines, not counting the function's own curly brackets
 - Each line must be at most 80 columns wide, comments included
