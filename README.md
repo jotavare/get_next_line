@@ -41,15 +41,17 @@ cd get_next_line/get_next_line
 
 #### 3º - Compile the mandatory or bonus files
 ```
-(Mandatory) cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
-(Bonus) cc -Wall -Wextra -Werror main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+[Flags] -Wall -Wextra -Werror
+[Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
+[Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
-> get_next_line should be able to compile with and without the -D BUFFER_SIZE flag in addiction to the usual flags.
+> get_next_line should be able to compile with and without the -D BUFFER_SIZE flag.
 ```
-(Mandatory) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line.c get_next_line_utils.c
-(Bonus) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+[Flags] -Wall -Wextra -Werror -D BUFFER_SIZE=[SIZE] 
+[Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
+[Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 5º - Execution with one or multiple file descriptors
