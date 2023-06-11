@@ -27,7 +27,7 @@ The "get_next_line" project in school 42 teaches us how to read from a file desc
 <a href="https://github.com/jotavare/get_next_line/blob/master/subject/en_subject_get_next_line.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-#### COMPILE
+#### COMPILATION AND EXECUTION
 
 #### 1º - Clone the repository
 ```
