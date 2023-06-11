@@ -66,7 +66,7 @@ cd get_next_line/get_next_line
 * Should work as expected reading from a file or from standard input.
 * Returned line should include the terminating `\n` character, except if it's the end of the file and the line does not end with `\n`.
 * The `get_next_line.h` header file should include at least the `get_next_line()` function.
-* All adicional functions should be included in `get_next_line_utils.c` file.
+* All adicional functions should be included in `get_next_line_utils.c` file, libft is not allowed.
 * To define the buffer size for `read()`, add the option to the compiled file `-D BUFFER_SIZE=[SIZE]`.
 
 ## BONUS
@@ -78,10 +78,12 @@ cd get_next_line/get_next_line
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
 ```
-- No for, do while, switch, case or goto are allowed
-- No more than 25 lines per function and 5 functions per file
-- No assigns and declarations in the same line (unless static)
-- No more than 5 variables in 1 function
+- No for, do...while, switch, case, goto, ternary operators and variable lenght arrays are allowed;
+- Each function must be maximum 25 lines, not counting the function's own curly brackets;
+- Each line must be at most 80 columns wide, comments included;
+- A function can take 4 named parameters maximum;
+- No assigns and declarations in the same line (unless static);
+- You can't declare more than 5 variables per function;
 - ...
 ```
 
