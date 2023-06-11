@@ -72,14 +72,17 @@ cd get_next_line/get_next_line
 ``make re`` - use rules `fclean` + `all`.
 
 ## MANDATORY
-* Contains functions specifically developed for this project. ``get_next_line.c``
-* Contains functions from libft with a few changes to fit in the project. ``get_next_line_utils.c``
-* Contains the headers of all .c files. ``get_next_line.h``
+* Read from one file descriptor, one line at a time.
+* Needs to return the line that was read. If empty or error, return `NULL`.
+* Should work as expected reading from a file and from standart input.
+* Returned line should include the terminating `\n` character, expect if end of file and does not end with `\n`.
+* The get_next_line.h header file should include at least the get_next_line() function.
+* All adicional functions should be included in `get_next_line_utils.c`.
 
 ## BONUS
-* Contains functions specifically developed for this project. ``get_next_line_bonus.c``		
-* Contains functions from libft with a few changes to fit in the project. ``get_next_line_utils_bonus.c``	
-* Contains the headers of all .c files. ``get_next_line_bonus.h``		
+* Use only one static variable.
+* Manage multiple file descriptors at the same time.
+* Bonus files should include a suffix `_bonus.[c\h]`.
 
 ## DISCLAIMER
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
