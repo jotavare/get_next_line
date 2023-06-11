@@ -30,31 +30,46 @@ The "get_next_line" project in school 42 teaches us how to read from a file desc
 #### COMPILE
 
 #### 1º - Clone the repository
-```bash
+```
 git clone git@github.com:jotavare/get_next_line.git
 ```
 
 #### 2º - Enter the project folder
-```bash
+```
 cd get_next_line/get_next_line
 ```
 
 #### 3º - Compile the mandatory or bonus files
-```bash
+```
 (Mandatory) cc main.c get_next_line.c get_next_line_utils.c
 (Bonus) cc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
-```bash
-(Mandatory) cc -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c
-(Bonus) cc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+```
+(Mandatory) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line.c get_next_line_utils.c
+(Bonus) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
-#### 5º - Execution
-```bash
-./a.out [file]
+#### 5º - Execution with one or multiple file descriptors
 ```
+./a.out [text.txt]
+./a.out [text1.txt] [text2.txt]
+```
+
+#### MAKEFILE RULES
+
+`make` - Compile libft mandatory functions.
+
+``make bonus`` - Compile libft bonus functions.
+
+``make all`` - Compile mandatory + bonus functions.
+
+``make clean`` - Delete all .o (object files) files.
+
+``make fclean`` - Delete all .o (object files) and .a (executable) files.
+
+``make re`` - use rules `fclean` + `all`.
 
 ## MANDATORY
 * Contains functions specifically developed for this project. ``get_next_line.c``
@@ -69,7 +84,7 @@ cd get_next_line/get_next_line
 ## DISCLAIMER
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
-```bash
+```
 - No for, do while, switch, case or goto are allowed
 - No more than 25 lines per function and 5 functions per file
 - No assigns and declarations in the same line (unless static)
