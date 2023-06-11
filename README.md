@@ -36,13 +36,13 @@ git clone git@github.com:jotavare/get_next_line.git
 
 #### 2º - Enter the project folder
 ```bash
-cd get_next_line\get_next_line
+cd get_next_line/get_next_line
 ```
 
 #### 3º - Compile the mandatory or bonus files
 ```bash
-(Mandatory) gcc main.c get_next_line.c get_next_line_utils.c
-(Bonus) gcc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+(Mandatory) cc main.c get_next_line.c get_next_line_utils.c
+(Bonus) cc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
