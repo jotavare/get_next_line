@@ -41,11 +41,12 @@ cd get_next_line/get_next_line
 
 #### 3º - Compile the mandatory or bonus files
 ```
-(Mandatory) cc main.c get_next_line.c get_next_line_utils.c
-(Bonus) cc main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+(Mandatory) cc -Wall -Wextra -Werror main.c get_next_line.c get_next_line_utils.c
+(Bonus) cc -Wall -Wextra -Werror main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
+> get_next_line should be able to compile with and without the -D BUFFER_SIZE flag in addiction to the usual flags.
 ```
 (Mandatory) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line.c get_next_line_utils.c
 (Bonus) cc -D BUFFER_SIZE=[SIZE] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
@@ -57,27 +58,14 @@ cd get_next_line/get_next_line
 ./a.out [text1.txt] [text2.txt]
 ```
 
-#### MAKEFILE RULES
-
-`make` - Compile libft mandatory functions.
-
-``make bonus`` - Compile libft bonus functions.
-
-``make all`` - Compile mandatory + bonus functions.
-
-``make clean`` - Delete all .o (object files) files.
-
-``make fclean`` - Delete all .o (object files) and .a (executable) files.
-
-``make re`` - use rules `fclean` + `all`.
-
 ## MANDATORY
 * Read from one file descriptor, one line at a time.
 * Needs to return the line that was read. If empty or error, return `NULL`.
-* Should work as expected reading from a file and from standart input.
+* Should work as expected reading from a file or from standart input.
 * Returned line should include the terminating `\n` character, expect if end of file and does not end with `\n`.
-* The get_next_line.h header file should include at least the get_next_line() function.
-* All adicional functions should be included in `get_next_line_utils.c`.
+* The `get_next_line.h` header file should include at least the `get_next_line()` function.
+* All adicional functions should be included in `get_next_line_utils.c` file.
+* To define the buffer size for `read()`, add the option to the compiled file `-D BUFFER_SIZE=[SIZE]`.
 
 ## BONUS
 * Use only one static variable.
