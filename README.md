@@ -17,7 +17,7 @@
 	<a href="#how-to-use">How to use</a> •
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
-	<a href="#disclaimer">Disclaimer</a> •
+	<a href="#norminette">Norminette</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -74,7 +74,7 @@ cd get_next_line/get_next_line
 * Manage multiple file descriptors at the same time.
 * Bonus files should include a suffix `_bonus.[c/h]`.
 
-## DISCLAIMER
+## NORMINETTE
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
 ```
