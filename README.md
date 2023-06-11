@@ -47,8 +47,8 @@ cd get_next_line/get_next_line
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
 ```bash
-(Mandatory) gcc -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c
-(Bonus) gcc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+(Mandatory) cc -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c
+(Bonus) cc -D BUFFER_SIZE=42 main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 5º - Execution
