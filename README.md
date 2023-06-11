@@ -64,7 +64,7 @@ cd get_next_line/get_next_line
 * Read from one file descriptor, one line at a time.
 * Needs to return the line that was read. If empty or error, return `NULL`.
 * Should work as expected reading from a file or from standard input.
-* Returned line should include the terminating \n character, except if it's the end of the file and the line does not end with \n.
+* Returned line should include the terminating `\n` character, except if it's the end of the file and the line does not end with `\n`.
 * The `get_next_line.h` header file should include at least the `get_next_line()` function.
 * All adicional functions should be included in `get_next_line_utils.c` file.
 * To define the buffer size for `read()`, add the option to the compiled file `-D BUFFER_SIZE=[SIZE]`.
