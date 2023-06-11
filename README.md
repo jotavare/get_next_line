@@ -18,7 +18,6 @@
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#disclaimer">Disclaimer</a> •
-	<a href="#testers">Testers</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -79,10 +78,6 @@ At 42 School, it is expected that almost every project is written in accordance 
 ```
 
 <a href="https://github.com/jotavare/jotavare/blob/main/42/pdf/en_norm.pdf">Click here</a> for more information on 42 norms.
-
-## TESTERS
-* [Francinette](https://github.com/xicodomingues/francinette)
-* [gnlTester](https://github.com/Tripouille/gnlTester)
 
 ## LICENSE
 <p>
