@@ -54,7 +54,7 @@ cd get_next_line/get_next_line
 [Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
-#### 5º - Execution with one or multiple file descriptors
+#### 5º - Execution with one or multiple file descriptors/standart input
 ```
 ./a.out [text.txt]
 ./a.out [text1.txt] [text2.txt]
