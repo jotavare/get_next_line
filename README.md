@@ -47,14 +47,14 @@ cd get_next_line/get_next_line
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
-> get_next_line should be able to compile with and without the -D BUFFER_SIZE flag.
+> get_next_line should be able to compile with and without the -D BUFFER_SIZE=[SIZE] flag.
 ```
 [Flags] -Wall -Wextra -Werror -D BUFFER_SIZE=[SIZE] 
 [Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
 [Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
-#### 5º - Execution with one or multiple file descriptors/standart input
+#### 5º - Execution with one or multiple file descriptors/standard input
 ```
 ./a.out [text.txt]
 ./a.out [text1.txt] [text2.txt]
@@ -63,8 +63,8 @@ cd get_next_line/get_next_line
 ## MANDATORY
 * Read from one file descriptor, one line at a time.
 * Needs to return the line that was read. If empty or error, return `NULL`.
-* Should work as expected reading from a file or from standart input.
-* Returned line should include the terminating `\n` character, expect if end of file and does not end with `\n`.
+* Should work as expected reading from a file or from standard input.
+* Returned line should include the terminating \n character, except if it's the end of the file and the line does not end with \n.
 * The `get_next_line.h` header file should include at least the `get_next_line()` function.
 * All adicional functions should be included in `get_next_line_utils.c` file.
 * To define the buffer size for `read()`, add the option to the compiled file `-D BUFFER_SIZE=[SIZE]`.
@@ -72,7 +72,7 @@ cd get_next_line/get_next_line
 ## BONUS
 * Use only one static variable.
 * Manage multiple file descriptors at the same time.
-* Bonus files should include a suffix `_bonus.[c\h]`.
+* Bonus files should include a suffix `_bonus.[c/h]`.
 
 ## DISCLAIMER
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
