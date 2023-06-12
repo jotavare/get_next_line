@@ -40,7 +40,7 @@ cd get_next_line/get_next_line
 ```
 
 #### 3º - Compile the mandatory or bonus files
-> The program should be compiled with the flags bellow.
+> The program should always be compiled with the flags bellow.
 ```bash
 [Flags] -Wall -Wextra -Werror
 [Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
