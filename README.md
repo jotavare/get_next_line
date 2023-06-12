@@ -40,7 +40,7 @@ cd get_next_line/get_next_line
 ```
 
 #### 3º - Compile the mandatory or bonus files
-> The program should always be compiled with the flags bellow.
+> The program should always be compiled with the flags below.
 ```bash
 [Flags] -Wall -Wextra -Werror
 [Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
@@ -79,8 +79,8 @@ cd get_next_line/get_next_line
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
 ```
-- No for, do...while, switch, case, goto, ternary operators and variable lenght arrays are allowed
-- Each function must be maximum 25 lines, not counting the function's own curly brackets
+- No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
+- Each function must be a maximum of 25 lines, not counting the function's curly brackets
 - Each line must be at most 80 columns wide, comments included
 - A function can take 4 named parameters maximum
 - No assigns and declarations in the same line (unless static)
@@ -90,7 +90,7 @@ At 42 School, it is expected that almost every project is written in accordance 
 
 * [42 Norms](https://github.com/jotavare/jotavare/blob/main/42/pdf/en_norm.pdf) - Information about 42 code norms. `PDF`
 * [Norminette](https://github.com/42School/norminette) - Tool by 42, to respect the code norm. `GitHub`
-* [42 Header](https://github.com/42Paris/42header) - 42 header for vim. `GitHub`
+* [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
 ## LICENSE
 <p>
