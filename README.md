@@ -27,8 +27,6 @@ This project taught me how to read from a file descriptor and use static variabl
 <a href="https://github.com/jotavare/get_next_line/blob/master/subject/en_subject_get_next_line.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-#### COMPILATION AND EXECUTION
-
 #### 1º - Clone the repository
 ```git
 git clone git@github.com:jotavare/get_next_line.git
