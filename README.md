@@ -76,7 +76,7 @@ cd get_next_line/get_next_line
 - [x] Bonus files should include a suffix `_bonus.[c/h]`.
 
 ## NORMINETTE
-At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
+> At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
 
 ```
 - No for, do...while, switch, case, goto, ternary operators, or variable-length arrays allowed;
