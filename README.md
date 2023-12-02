@@ -64,7 +64,7 @@ cd get_next_line/get_next_line
 ## MANDATORY
 - [x] Read from one file descriptor, one line at a time.
 - [x] Needs to return the line that was read. If empty or error, return `NULL`.
-- [x] Should work as expected reading from a file or from standard input.
+- [x] Should work as expected reading from a file or standard input.
 - [x] Returned line should include the terminating `\n` character, except if it's the end of the file and the line does not end with `\n`.
 - [x] The `get_next_line.h` header file should include at least the `get_next_line()` function.
 - [x] All adicional functions should be included in `get_next_line_utils.c` file, libft is not allowed.
@@ -76,23 +76,23 @@ cd get_next_line/get_next_line
 - [x] Bonus files should include a suffix `_bonus.[c/h]`.
 
 ## NORMINETTE
-At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
+At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
 
 ```
-- No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
-- Each function must be a maximum of 25 lines, not counting the function's curly brackets
-- Each line must be at most 80 columns wide, comments included
-- A function can take 4 named parameters maximum
-- No assigns and declarations in the same line (unless static)
-- You can't declare more than 5 variables per function
+- No for, do...while, switch, case, goto, ternary operators, or variable-length arrays allowed;
+- Each function must be a maximum of 25 lines, not counting the function's curly brackets;
+- Each line must be at most 80 columns wide, with comments included;
+- A function can take 4 named parameters maximum;
+- No assigns and declarations in the same line (unless static);
+- You can't declare more than 5 variables per function;
 - ...
 ```
 
 * [42 Norms](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) - Information about 42 code norms. `PDF`
-* [Norminette](https://github.com/42School/norminette) - Tool by 42, to respect the code norm. `GitHub`
+* [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
 ## LICENSE
 <p>
-This work is published under the terms of <a href="https://github.com/jotavare/jotavare/blob/main/LICENSE">42 Unlicense</a>.
+This work is published under the terms of <a href="https://github.com/jotavare/get_next_line/blob/main/LICENSE">Unlicense</a>.
 </p>
