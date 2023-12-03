@@ -24,8 +24,8 @@
 ## ABOUT
 This project taught me how to read from a file descriptor and use static variables. This function retrieves a single line from a specified file descriptor. When called in a loop, get_next_line returns all the contents of the file, one line at a time until the end of the file is reached. Additionally, this function can be compiled with any buffer size specified.
 
-- [Subject](https://github.com/jotavare/get_next_line/blob/master/subject/en_subject_get_next_line.pdf)
-- [References](https://github.com/jotavare/42-resources#01-get_next_line)
+- [Subject](https://github.com/jotavare/get_next_line/blob/master/subject/en_subject_get_next_line.pdf) `PDF`
+- [References](https://github.com/jotavare/42-resources#01-get_next_line) `GitHub`
 
 ## HOW TO USE
 #### 1º - Clone the repository
