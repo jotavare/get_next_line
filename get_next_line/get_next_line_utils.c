@@ -27,7 +27,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-//	Calculates the lenght of a string 'str'
+//	Calculates the length of a string 'str'
 
 size_t	ft_strlen(const char *str)
 {
