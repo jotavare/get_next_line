@@ -1,3 +1,20 @@
 *.out
 *.pdf
 *.swp
+
+# Build output: this project is compiled directly, so a.out is what appears.
+*.o
+a.out
+
+# Editor and OS droppings.
+.vscode/
+.idea/
+*~
+.DS_Store
+Thumbs.db
+
+# Never commit credentials.
+.env
+.env.*
+*.pem
+*.key

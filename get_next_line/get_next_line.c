@@ -20,9 +20,15 @@ static int	read_buffer(int fd, char **stash, char *buffer)
 	char	*tmp;
 	int		bytes;
 
+	if (buffer == NULL)
+	{
+		free(*stash);
+		*stash = NULL;
+		return (-1);
+	}
 	ft_bzero(buffer, BUFFER_SIZE + 1);
 	bytes = read(fd, buffer, BUFFER_SIZE);
-	if (bytes < 0 || buffer == NULL)
+	if (bytes < 0)
 	{
 		free(*stash);
 		*stash = NULL;
