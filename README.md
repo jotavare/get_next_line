@@ -8,7 +8,7 @@
 	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/github/languages/top/jotavare/get_next_line?color=%2312bab9&style=flat-square"/>
 	<img src="https://img.shields.io/github/last-commit/jotavare/get_next_line?color=%2312bab9&style=flat-square"/>
-	<a href='https://www.linkedin.com/in/joaoptoliveira' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-100000?style=flat-square&logo=Linkedin&logoColor=white&labelColor=0A66C2&color=0A66C2'/></a>
+	<a href='https://www.linkedin.com/in/jotavare' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-blue?style=flat-square'/></a>
 	<a href='https://profile.intra.42.fr/users/jotavare' target="_blank"><img alt='42' src='https://img.shields.io/badge/Porto-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
 </p>
 
@@ -18,12 +18,16 @@
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#norminette">Norminette</a> •
+	<a href="#debugging">Debugging</a> •
 	<a href="#contributing">Contributing</a> •
 	<a href="#license">License</a>
 </p>
 
 ## ABOUT
 This project taught me how to read from a file descriptor and use static variables. This function retrieves a single line from a specified file descriptor. When called in a loop, get_next_line returns all the contents of the file, one line at a time until the end of the file is reached. Additionally, this function can be compiled with any buffer size specified.
+
+> [!NOTE]
+> For the rest of the projects and exams in the cursus, <a href="https://github.com/jotavare/42-common-core">click here</a>.
 
 ## HOW TO USE
 #### 1º - Clone the repository
@@ -64,7 +68,7 @@ cd get_next_line/get_next_line
 - [x] Should work as expected reading from a file or standard input.
 - [x] Returned line should include the terminating `\n` character, except if it's the end of the file and the line does not end with `\n`.
 - [x] The `get_next_line.h` header file should include at least the `get_next_line()` function.
-- [x] All adicional functions should be included in `get_next_line_utils.c` file, libft is not allowed.
+- [x] All additional functions should be included in `get_next_line_utils.c` file, libft is not allowed.
 - [x] To define the buffer size for `read()`, add the option to the compiled file `-D BUFFER_SIZE=[SIZE]`.
 
 ## BONUS
@@ -89,10 +93,35 @@ cd get_next_line/get_next_line
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
+## DEBUGGING
+> The line returned belongs to the caller, and whatever has been read but not
+> yet returned sits in a static variable between calls, so this is where the
+> leaks are.
+
+Compile with `-g` to keep the symbols the debuggers need:
+
+```bash
+cc -Wall -Wextra -Werror -g main.c get_next_line.c get_next_line_utils.c
+```
+
+`valgrind --leak-check=full ./a.out` - Report memory that was allocated and never freed. Every line handed back has to be freed by the caller, and stopping before the end of a file leaves the stash holding the rest.
+
+`valgrind --track-origins=yes ./a.out` - Trace an uninitialised value back to where it came from.
+
+`gdb ./a.out` - Step through a call and inspect the stash between reads.
+
+`cc -fsanitize=address -g ...` - Catches leaks and out-of-bounds reads without valgrind, and runs much faster.
+
+Worth testing with `-D BUFFER_SIZE=1` and with a file whose last line has no `\n`; both are where an implementation usually breaks.
+
+* [GDB](https://www.sourceware.org/gdb/) - The GNU debugger. `Website`
+* [Valgrind](https://valgrind.org/docs/manual/quick-start.html) - Quick start guide. `Website`
+
 ## CONTRIBUTING
 
-If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
+This repository documents work already submitted and graded, so it is not open
+to changes. Feel free to fork it if any of it is useful to you.
 
 ## LICENSE
 
-This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/get_next_line/blob/master/LICENSE) file.
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/get_next_line/blob/main/LICENSE) file.
