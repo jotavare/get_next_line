@@ -85,7 +85,7 @@ static void	get_result(char **stash, char **result)
 	nl = ft_strchr(*stash, '\n');
 	len = ft_strlen(*stash) - ft_strlen(nl) + 2;
 	*result = (char *)malloc(len * sizeof(char));
-	if (!result)
+	if (!*result)
 		return ;
 	i = 0;
 	while (i < len - 1)
