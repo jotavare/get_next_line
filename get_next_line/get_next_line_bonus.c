@@ -85,7 +85,7 @@ static void	get_result(char **stash, char **result)
 	nl = ft_strchr(*stash, '\n');
 	len = ft_strlen(*stash) - ft_strlen(nl) + 2;
 	*result = (char *)malloc(len * sizeof(char));
-	if (!result)
+	if (!*result)
 		return ;
 	i = 0;
 	while (i < len - 1)
@@ -108,7 +108,7 @@ char	*get_next_line(int fd)
 	char		*buffer;
 	int			bytes;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd >= MAX_FILES_OPENED || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 	bytes = 1;
