@@ -26,20 +26,21 @@ git clone git@github.com:jotavare/get_next_line.git
 cd get_next_line/get_next_line
 ```
 
-#### 3º - Compile the mandatory or bonus files
-> The program should always be compiled with the flags below.
+#### 3º - Compile the mandatory or bonus files with your own test file
+> No `main.c` is included, as the subject provides none; write your own that
+> calls `get_next_line()` and compile it alongside these files.
 ```bash
 [Flags] -Wall -Wextra -Werror
-[Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
-[Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+[Mandatory] cc [Flags] your_main.c get_next_line.c get_next_line_utils.c
+[Bonus] cc [Flags] your_main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 4º - BUFFER_SIZE can be specified at compilation to override the default BUFFER_SIZE
 > get_next_line should be able to compile with and without the -D BUFFER_SIZE=[SIZE] flag.
 ```bash
 [Flags] -Wall -Wextra -Werror -D BUFFER_SIZE=[SIZE]
-[Mandatory] cc [Flags] main.c get_next_line.c get_next_line_utils.c
-[Bonus] cc [Flags] main.c get_next_line_bonus.c get_next_line_utils_bonus.c
+[Mandatory] cc [Flags] your_main.c get_next_line.c get_next_line_utils.c
+[Bonus] cc [Flags] your_main.c get_next_line_bonus.c get_next_line_utils_bonus.c
 ```
 
 #### 5º - Execution with one or multiple file descriptors/standard input
